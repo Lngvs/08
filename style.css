@@ -57,27 +57,59 @@ body section {
   left: 50%;
   transform: translate(-50%, -30%);
   top: 70%;
-  width: 80%;
-  height: 40%;
+  width: 80vw;
+  height: 40vh;
   display: block;
   text-align: center;
+  font-size: 0;
 }
 body section.up {
   top: 30%;
 }
+body section.up h2 {
+  text-align: left;
+}
+body section.up p {
+  display: inline-block;
+  text-align: left;
+  height: 40%;
+}
+body section.down h2 {
+  text-align: center;
+}
+body section.down p {
+  display: inline-block;
+  text-align: justify;
+  height: 40%;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 20px;
+}
 body section div {
   display: inline-block;
-  max-width: 20%;
-  max-height: 90%;
+  max-width: 25%;
+  height: 30vh;
   overflow: hidden;
   text-align: left;
+  margin: 0 auto;
+  font-size: 12px;
+  padding: 10px;
 }
 body section div span {
   background-image: url(https://www.alimentarium.org/sites/default/files/media/image/2017-02/AL027-01_pomme_de_terre_0_0.jpg);
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 25%;
   display: inline-block;
-  min-height: 25%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+body section div span.small {
+  width: 20%;
+  min-width: 20px;
+  height: 20%;
+}
+body section div span.bigger {
+  width: 100%;
+  min-width: 40px;
+  height: 40%;
 }/*# sourceMappingURL=style.css.map */
